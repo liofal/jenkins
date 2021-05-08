@@ -17,7 +17,9 @@ services:
     hostname: liofal.synology.me
     volumes:
       - /volume1/docker/jenkins/config:/var/jenkins_home
-      - /volume1/twitch:/downloads
+      - /volume1/twitch:/downloads/twitch
+      - /volume1/sonarr:/downloads/sonarr
+      - /volume1/radarr:/downloads/radarr
       - /var/run/docker.sock:/var/run/docker.sock:ro
     logging:
       driver: json-file
