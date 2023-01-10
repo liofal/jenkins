@@ -1,5 +1,5 @@
 # Specify base image
-FROM jenkins/jenkins:lts-slim
+FROM jenkins/jenkins:latest
 
 USER root
 RUN apt-get update && apt-get install -y apt-transport-https \
